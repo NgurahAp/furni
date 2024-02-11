@@ -315,7 +315,7 @@ main {
 }
 
 footer {
-  height: 30vh;
+  height: 25vh;
   background-color: rgb(185, 181, 181);
   display: flex;
   padding: 50px 0rem 20px 20rem;
@@ -325,10 +325,46 @@ footer .contact {
   flex: 3;
 }
 
+footer .contact h1 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+footer .contact p {
+  font-size: 1.2rem;
+}
+
 footer .category {
   flex: 3;
 }
 
+footer .category h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+footer .category p {
+  font-size: 1.2rem;
+}
+
 footer .link {
   flex: 3;
+}
+
+footer .link h2 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+footer .link ul {
+  list-style: none;
+}
+
+footer .link a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0 2.5rem;
+  color: black;
+  transition: all 0.3s ease-in-out;
 }
