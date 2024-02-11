@@ -15,28 +15,36 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 7rem 0 7rem;
+  padding: 1.8rem 7rem 0 7rem;
+  position: fixed; /* Mengubah posisi menjadi fixed */
+  top: 0;
+  width: 100%; /* Menetapkan lebar 100% agar mengisi seluruh lebar layar */
+  height: 5vh;
+  background-color: rgba(99, 122, 159, 0.8);
+  z-index: 999;
 }
 
 nav h1 {
   color: #c9d7dd;
+  padding-top: 0;
 }
 
 nav ul {
   display: flex;
-  padding-top: 10px;
-  padding-right: 50px;
+  padding: 0 15rem 10px 0; /* Mengubah padding menjadi 10px di atas dan bawah */
+  margin: 0; /* Menghilangkan margin default */
+  list-style: none; /* Menghilangkan tanda bullet dari list */
 }
 
 nav li {
-  list-style-type: none;
+  margin-right: 20px; /* Menambahkan margin kanan antara setiap list item */
 }
 
 nav li a {
   text-decoration: none;
-  padding: 2.5rem 2.5rem 1rem 2.5rem;
+  padding: 0 2.5rem; /* Mengurangi padding atas dan bawah */
   color: #c9d7dd;
-  transition: all 0.3s ease-in-out; /* Animasi transisi */
+  transition: all 0.3s ease-in-out;
 }
 
 nav li a:hover {
@@ -46,7 +54,7 @@ nav li a:hover {
 }
 
 .header-content {
-  padding: 3rem 7rem 0 7rem;
+  padding: 7rem;
   display: flex;
   align-items: center;
 }
@@ -263,7 +271,8 @@ main {
 }
 
 .img-services1 {
-  width: 33rem;
+  padding-left: 50px;
+  width: 40rem;
   height: 40rem;
 }
 
@@ -286,6 +295,7 @@ main {
 }
 
 .point ul {
+  flex: 50%;
   list-style-type: disc; /* Atau gunakan 'circle', 'square', atau custom image */
   padding-left: 20px; /* Memberikan margin kiri agar bullet tidak disebabkan oleh margin atau padding lain */
 }
@@ -302,4 +312,23 @@ main {
 .services-text p {
   font-size: 1.3rem;
   padding-bottom: 10px;
+}
+
+footer {
+  height: 30vh;
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  padding: 50px 0rem 20px 20rem;
+}
+
+footer .contact {
+  flex: 3;
+}
+
+footer .category {
+  flex: 3;
+}
+
+footer .link {
+  flex: 3;
 }
