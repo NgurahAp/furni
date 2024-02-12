@@ -368,3 +368,156 @@ footer .link a {
   color: black;
   transition: all 0.3s ease-in-out;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  header {
+    padding-top: 5rem;
+  }
+
+  nav {
+    padding: 1.8rem 2rem; /* Mengurangi padding di atas dan kanan */
+  }
+
+  nav ul {
+    padding: 0; /* Menghilangkan padding di atas dan bawah */
+  }
+
+  nav h1 {
+    padding-top: 0.5rem; /* Menambah padding di atas */
+  }
+
+  .header-content {
+    padding: 3rem; /* Mengurangi padding pada header content */
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+  }
+
+  .header-content h1 {
+    font-size: 3rem; /* Mengurangi ukuran font */
+  }
+
+  .header-content p {
+    padding-top: 1rem; /* Mengubah padding atas */
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .header-content button {
+    margin-right: 0; /* Menghilangkan margin kanan */
+    margin-top: 1rem; /* Menambah margin atas */
+  }
+
+  .header-content-img {
+    justify-content: center; /* Menggeser gambar ke tengah */
+    margin-top: 2rem; /* Menambah margin atas */
+  }
+
+  .header-content-img img {
+    width: 80%; /* Mengurangi lebar gambar */
+  }
+
+  main {
+    padding: 3rem 2rem; /* Mengurangi padding di atas dan kanan */
+  }
+
+  .product {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
+  }
+
+  .description {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+    padding-right: 0; /* Menghapus padding kanan */
+  }
+
+  .list-item {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    align-items: center; /* Menggeser item ke tengah */
+  }
+
+  .item-1 {
+    margin: 2rem 0; /* Menambah margin atas dan bawah */
+    width: 100%; /* Mengubah lebar menjadi penuh */
+  }
+
+  .item-details {
+    margin-top: 1rem; /* Menambah margin atas */
+  }
+
+  .about {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    padding: 3rem 0; /* Menyesuaikan padding */
+  }
+
+  .about-img {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+    padding-right: 0; /* Menghapus padding kanan */
+    margin-bottom: 2rem; /* Menambah margin bawah */
+  }
+
+  .about-desc {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+  }
+
+  .why {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    align-items: center; /* Menggeser item ke tengah */
+  }
+
+  .why-1 {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+    margin-bottom: 2rem; /* Menambah margin bawah */
+  }
+
+  .services {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
+  }
+
+  .services .pict {
+    padding: 2rem 0; /* Menyesuaikan padding */
+  }
+
+  .img-services1 {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
+    padding-left: 0; /* Menghapus padding kiri */
+  }
+
+  .img-services2,
+  .img-services3 {
+    width: 100%; /* Mengubah lebar menjadi penuh */
+    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
+    position: static; /* Mengubah posisi menjadi statis */
+    margin: 1rem 0; /* Menambah margin atas dan bawah */
+  }
+
+  .point {
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    align-items: center; /* Menggeser item ke tengah */
+  }
+
+  .point ul {
+    padding-left: 0; /* Menghilangkan padding kiri */
+    margin-bottom: 1rem; /* Menambah margin bawah */
+  }
+
+  footer {
+    padding: 2rem 2rem; /* Menyesuaikan padding */
+    flex-direction: column; /* Mengubah orientasi flex menjadi column */
+    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
+  }
+
+  footer .contact,
+  footer .category,
+  footer .link {
+    flex: 100%; /* Mengubah lebar menjadi penuh */
+    margin-bottom: 2rem; /* Menambah margin bawah */
+  }
+
+  footer .link h2 {
+    padding-left: 0; /* Menghapus padding kiri */
+  }
+}
+
+/* Tambahkan aturan CSS sesuai kebutuhan */
