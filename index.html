@@ -16,6 +16,7 @@
   </head>
   <body>
     <!-- HEADER -->
+
     <header id="header">
       <nav>
         <h1 class="logo">Furni</h1>
@@ -43,60 +44,63 @@
 
           <button>Shop Now</button>
         </div>
-        <div class="header-content-img">
+        <aside>
           <img src="assets/sofa.png" alt="Sofa" />
-        </div>
+        </aside>
       </div>
     </header>
 
     <main>
       <!-- Product -->
-      <div class="product" id="product">
-        <div class="description">
-          <h1>Crafted with excellent material</h1>
-          <p>
-            Artfully fashioned with exceptional materials, this product
-            epitomizes a commitment to excellence, ensuring durability,
-            sophistication, and a superior level of craftsmanship.
-          </p>
-        </div>
-        <div class="list-item">
-          <div class="item-1">
-            <img src="assets/sofa1.png" alt="sofa1.png" />
-            <div class="item-details">
-              <h2>Nordic chair</h2>
-              <h2>$50.00</h2>
-              <div class="plus-icon">
-                <i class="fas fa-plus"></i>
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <article class="product" id="product">
+          <div class="description">
+            <h1>Crafted with excellent material</h1>
+            <p>
+              Artfully fashioned with exceptional materials, this product
+              epitomizes a commitment to excellence, ensuring durability,
+              sophistication, and a superior level of craftsmanship.
+            </p>
+          </div>
+
+          <div class="list-item">
+            <div class="item-1">
+              <img src="assets/sofa1.png" alt="sofa1.png" />
+              <div class="item-details">
+                <h2>Nordic chair</h2>
+                <h2>$50.00</h2>
+                <div class="plus-icon">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item-1">
+              <img src="assets/sofa3.png" alt="sofa2.png" />
+              <div class="item-details">
+                <h2>Kruzo Aero</h2>
+                <h2>$74.00</h2>
+                <div class="plus-icon">
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item-1">
+              <img src="assets/sofa2.png" alt="sofa1.png" />
+              <div class="item-details">
+                <h2>Ergo chair</h2>
+                <h2>$80.00</h2>
+                <div class="plus-icon">
+                  <i class="fas fa-plus"></i>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item-1">
-            <img src="assets/sofa3.png" alt="sofa2.png" />
-            <div class="item-details">
-              <h2>Kruzo Aero</h2>
-              <h2>$74.00</h2>
-              <div class="plus-icon">
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-          </div>
-          <div class="item-1">
-            <img src="assets/sofa2.png" alt="sofa1.png" />
-            <div class="item-details">
-              <h2>Nordic chair</h2>
-              <h2>$50.00</h2>
-              <div class="plus-icon">
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
 
       <!-- About Us -->
       <div class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in" data-aos-duration="1000">
           <img src="assets/main-aside.jpg" alt="" />
         </div>
         <div class="about-desc">
@@ -170,7 +174,7 @@
             </ul>
           </div>
         </div>
-        <div class="pict">
+        <div class="pict" data-aos="zoom-out-left" data-aos-duration="1000">
           <img class="img-services1" src="assets/pict4.jpg" alt="" />
           <img class="img-services2" src="assets/pict9.jpg" alt="" />
           <img class="img-services3" src="assets/pict5.jpg" alt="" />
@@ -217,5 +221,11 @@
     var scroll = new SmoothScroll("a[data-scroll]", {
       speed: 800, // Sesuaikan kecepatan animasi scroll di sini
     });
+  </script>
+  <!-- Animate On Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
   </script>
 </html>

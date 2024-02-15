@@ -5,6 +5,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -93,12 +94,12 @@ nav li a:hover {
   background-color: transparent;
 }
 
-.header-content-img {
+aside {
   display: flex;
   justify-content: flex-end; /* Menggeser gambar ke sisi kanan */
 }
 
-.header-content-img img {
+aside img {
   height: auto;
   width: 90%;
 }
@@ -407,12 +408,12 @@ footer .link a {
     margin-top: 1rem; /* Menambah margin atas */
   }
 
-  .header-content-img {
+  aside {
     justify-content: center; /* Menggeser gambar ke tengah */
     margin-top: 2rem; /* Menambah margin atas */
   }
 
-  .header-content-img img {
+  aside img {
     width: 80%; /* Mengurangi lebar gambar */
   }
 
@@ -519,5 +520,3 @@ footer .link a {
     padding-left: 0; /* Menghapus padding kiri */
   }
 }
-
-/* Tambahkan aturan CSS sesuai kebutuhan */
