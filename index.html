@@ -3,60 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <title>Furni</title>
   </head>
-  <body>
+  <body class="font-quicksand overflow-x-hidden">
     <!-- HEADER -->
-
-    <header id="header">
-      <nav data-aos="fade-down" data-aos-duration="1000">
-        <h1 class="logo">Cari Kuli</h1>
-        <ul>
-          <li><a data-scroll href="#header">Kuli</a></li>
-          <li><a data-scroll href="/furni/furni.html">Furniture</a></li>
+    <header
+      id="header"
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('kuliAssets/img3.jpg')"
+    >
+      <nav
+        class="flex justify-between items-center px-20 py-8 fixed top-0 w-full bg-transparent z-50"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <h1 class="text-green-500 text-5xl font-bold">Cari Kuli</h1>
+        <ul class="flex space-x-4">
+          <li>
+            <a
+              data-scroll
+              href="#header"
+              class="text-white text-3xl transition-all duration-300 ease-in-out nav-link"
+              >Kuli</a
+            >
+          </li>
+          <li>
+            <a
+              data-scroll
+              href="/furni/furni.html"
+              class="text-white text-3xl transition-all duration-300 ease-in-out nav-link px-20"
+              >Furniture</a
+            >
+          </li>
         </ul>
       </nav>
 
-      <div class="header-content">
-        <div
-          class="header-content-text"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h1>
-            Find the <span class="highlighted-text">BEST</span> Construction
-            Workers in Your Area
-          </h1>
-        </div>
+      <div
+        class="flex flex-col items-center justify-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h1 class="text-white text-9xl pt-80 font-bold">
+          Find the <span class="text-green-500">BEST</span> <br />
+          Construction Workers <br />in Your Area
+        </h1>
       </div>
     </header>
-  </body>
-  <script defer src="script.js"></script>
-  <!-- Font Awesome -->
-  <script
-    src="https://kit.fontawesome.com/ba315d3bcc.js"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Smooth Scroll -->
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
-    var scroll = new SmoothScroll("a[data-scroll]", {
-      speed: 800, // Sesuaikan kecepatan animasi scroll di sini
-    });
-  </script>
-  <!-- Animate On Scroll -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ba315d3bcc.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      var scroll = new SmoothScroll("a[data-scroll]", {
+        speed: 800, // Sesuaikan kecepatan animasi scroll di sini
+      });
+      AOS.init();
+    </script>
+  </body>
 </html>
