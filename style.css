@@ -9,7 +9,8 @@ body {
 }
 
 header {
-  background-color: #637a9f;
+  background-image: url("kuliAssets/img3.jpg");
+  background-size: cover;
   height: 100vh; /* Ubah tinggi dengan mengurangkan padding */
 }
 
@@ -21,12 +22,14 @@ nav {
   top: 0;
   width: 100%; /* Menetapkan lebar 100% agar mengisi seluruh lebar layar */
   height: 5vh;
-  background-color: rgba(99, 122, 159, 0.8);
+  background-color: transparent;
   z-index: 999;
 }
 
 nav h1 {
-  color: #c9d7dd;
+  color: #91ddcf;
+  font-size: 3rem;
+  font-weight: bolder;
   padding-top: 0;
 }
 
@@ -37,486 +40,33 @@ nav ul {
   list-style: none; /* Menghilangkan tanda bullet dari list */
 }
 
-nav li {
-  margin-right: 20px; /* Menambahkan margin kanan antara setiap list item */
-}
-
 nav li a {
+  font-size: 2rem;
   text-decoration: none;
-  padding: 0 2.5rem; /* Mengurangi padding atas dan bawah */
-  color: #c9d7dd;
+  padding: 0 4rem; /* Mengurangi padding atas dan bawah */
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 
 nav li a:hover {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: #e8c872;
 }
 
 .header-content {
-  padding: 7rem;
+  padding: 13rem 10rem;
+
   display: flex;
   align-items: center;
 }
 
 .header-content h1 {
-  font-size: 4.5rem;
+  padding: 5rem 2rem;
+  font-size: 8rem;
   color: white;
 }
 
-.header-content p {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  font-size: 1.3rem;
-  color: #c9d7dd;
-}
-
-.header-content button {
-  margin-right: 20px;
-  padding: 1.5rem 3.7rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  margin-block-start: 1rem;
-  background-color: #e8c872;
-  font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  color: black;
-  cursor: pointer;
-  transition: all 0.15s ease-in;
-}
-
-.header-content button:hover {
-  color: white;
-  border: 1px solid white;
-  background-color: transparent;
-}
-
-aside {
-  display: flex;
-  justify-content: flex-end; /* Menggeser gambar ke sisi kanan */
-}
-
-aside img {
-  height: auto;
-  width: 90%;
-}
-
-main {
-  padding: 3rem 7rem 3rem 7rem;
-}
-
-.product {
-  display: flex;
-  height: 70vh;
-  align-items: center;
-}
-
-.description {
-  width: 25%;
-  padding-right: 50px;
-}
-
-.description h1 {
-  font-size: 3.5rem;
-  line-height: 1;
-  padding-bottom: 25px;
-}
-
-.description p {
-  font-size: 1.2rem;
-  text-align: justify;
-  padding-bottom: 30px;
-}
-
-.list-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 13px;
-}
-
-.item-1 {
-  margin: 30px;
-  background-color: transparent;
-  border-radius: 10%;
-  border: 2px solid transparent;
-  width: 22vh;
-  height: 32vh;
-  padding: 0 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.item-1:hover {
-  background-color: #f3e2b0;
-  transition: 0.5s ease-in-out;
-}
-
-.item-1:hover img {
-  transform: scale(1.2);
-  transition: 0.5s ease-in-out;
-}
-
-.item-1:hover .item-details h2 {
-  font-size: 1.8rem;
-  transition: 0.5s ease-in-out;
-}
-
-.item-1:hover .plus-icon i {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
-  transition: 0.5s ease-in-out;
-}
-
-.item-1 img {
-  height: 200px;
-}
-
-.item-details {
-  text-align: center; /* Center text horizontally */
-}
-
-.plus-icon {
-  margin-top: 0; /* Adjust the margin as needed */
-}
-
-.plus-icon i {
-  background-color: transparent;
-  font-size: 1rem;
-  color: transparent;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  padding: 0.7rem;
-}
-
-.about {
-  display: flex;
-  padding: 50px 0 50px 0;
-  align-items: center;
-}
-
-.about-img {
-  width: 40%;
-  padding-right: 5rem;
-}
-
-.about-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.about-desc {
-  width: 60%;
-}
-
-.about-desc h2 {
-  font-size: 3rem;
-  padding-bottom: 10px;
-}
-
-.about-desc p {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-}
-
-.why {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.why-1 {
-  flex: 50%;
-}
-
-.why-1 i {
-  font-size: 2rem;
-  padding: 10px 0 10px 0;
-  width: 48%;
-}
-
-.why-1 h2 {
-  font-size: 1.8rem;
-}
-
-.why-1 p {
-  font-size: 1.2rem;
-  text-align: justify;
-  padding-right: 20px;
-}
-
-.services {
-  display: flex;
-  padding: 50px 0 50px 0;
-  align-items: center;
-  width: 100%;
-  height: 70vh;
-  /* background-color: #637a9f; */
-}
-
-.services .services-text {
-  flex: 4;
-}
-
-.services .pict {
-  flex: 6;
-  padding: 20px;
-  position: relative;
-}
-
-.img-services1 {
-  padding-left: 50px;
-  width: 40rem;
-  height: 40rem;
-}
-
-.img-services2 {
-  width: 12rem;
-  height: 12rem;
-  position: absolute;
-  right: 20px;
-}
-
-.img-services3 {
-  width: 16rem;
-  position: absolute;
-  right: 20px;
-  bottom: 24px;
-}
-
-.point {
-  display: flex;
-}
-
-.point ul {
-  flex: 50%;
-  list-style-type: disc; /* Atau gunakan 'circle', 'square', atau custom image */
-  padding-left: 20px; /* Memberikan margin kiri agar bullet tidak disebabkan oleh margin atau padding lain */
-}
-
-.point li {
-  font-size: 1.3rem;
-}
-
-.services-text h1 {
-  font-size: 3rem;
-  padding-bottom: 10px;
-}
-
-.services-text p {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-}
-
-footer {
-  height: 25vh;
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  padding: 50px 0rem 20px 20rem;
-}
-
-footer .contact {
-  flex: 3;
-}
-
-footer .contact h1 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-
-footer .contact p {
-  font-size: 1.2rem;
-}
-
-footer .category {
-  flex: 3;
-}
-
-footer .category h2 {
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
-
-footer .category p {
-  font-size: 1.2rem;
-}
-
-footer .link {
-  flex: 3;
-}
-
-footer .link h2 {
-  font-size: 2rem;
-  padding-bottom: 10px;
-  padding-left: 30px;
-}
-
-footer .link ul {
-  list-style: none;
-}
-
-footer .link a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 0 2.5rem;
-  color: black;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 1200px) {
-  header {
-    padding-top: 5rem;
-  }
-
-  nav {
-    padding: 1.8rem 2rem; /* Mengurangi padding di atas dan kanan */
-  }
-
-  nav ul {
-    padding: 0; /* Menghilangkan padding di atas dan bawah */
-  }
-
-  nav h1 {
-    padding-top: 0.5rem; /* Menambah padding di atas */
-  }
-
-  .header-content {
-    padding: 3rem; /* Mengurangi padding pada header content */
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-  }
-
-  .header-content h1 {
-    font-size: 3rem; /* Mengurangi ukuran font */
-  }
-
-  .header-content p {
-    padding-top: 1rem; /* Mengubah padding atas */
-    font-size: 1.2rem;
-    text-align: justify;
-  }
-
-  .header-content button {
-    margin-right: 0; /* Menghilangkan margin kanan */
-    margin-top: 1rem; /* Menambah margin atas */
-  }
-
-  aside {
-    justify-content: center; /* Menggeser gambar ke tengah */
-    margin-top: 2rem; /* Menambah margin atas */
-  }
-
-  aside img {
-    width: 80%; /* Mengurangi lebar gambar */
-  }
-
-  main {
-    padding: 3rem 2rem; /* Mengurangi padding di atas dan kanan */
-  }
-
-  .product {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
-  }
-
-  .description {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-    padding-right: 0; /* Menghapus padding kanan */
-  }
-
-  .list-item {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    align-items: center; /* Menggeser item ke tengah */
-  }
-
-  .item-1 {
-    margin: 2rem 0; /* Menambah margin atas dan bawah */
-    width: 100%; /* Mengubah lebar menjadi penuh */
-  }
-
-  .item-details {
-    margin-top: 1rem; /* Menambah margin atas */
-  }
-
-  .about {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    padding: 3rem 0; /* Menyesuaikan padding */
-  }
-
-  .about-img {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-    padding-right: 0; /* Menghapus padding kanan */
-    margin-bottom: 2rem; /* Menambah margin bawah */
-  }
-
-  .about-desc {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-  }
-
-  .why {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    align-items: center; /* Menggeser item ke tengah */
-  }
-
-  .why-1 {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-    margin-bottom: 2rem; /* Menambah margin bawah */
-  }
-
-  .services {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
-  }
-
-  .services .pict {
-    padding: 2rem 0; /* Menyesuaikan padding */
-  }
-
-  .img-services1 {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
-    padding-left: 0; /* Menghapus padding kiri */
-  }
-
-  .img-services2,
-  .img-services3 {
-    width: 100%; /* Mengubah lebar menjadi penuh */
-    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
-    position: static; /* Mengubah posisi menjadi statis */
-    margin: 1rem 0; /* Menambah margin atas dan bawah */
-  }
-
-  .point {
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    align-items: center; /* Menggeser item ke tengah */
-  }
-
-  .point ul {
-    padding-left: 0; /* Menghilangkan padding kiri */
-    margin-bottom: 1rem; /* Menambah margin bawah */
-  }
-
-  footer {
-    padding: 2rem 2rem; /* Menyesuaikan padding */
-    flex-direction: column; /* Mengubah orientasi flex menjadi column */
-    height: auto; /* Menyesuaikan tinggi sesuai kontennya */
-  }
-
-  footer .contact,
-  footer .category,
-  footer .link {
-    flex: 100%; /* Mengubah lebar menjadi penuh */
-    margin-bottom: 2rem; /* Menambah margin bawah */
-  }
-
-  footer .link h2 {
-    padding-left: 0; /* Menghapus padding kiri */
-  }
+.highlighted-text {
+  color: #91ddcf;
 }
